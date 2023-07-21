@@ -1,4 +1,5 @@
 import Header from '../../components/Header'
+import HomeAbout from './components/HomeAbout'
 import HomeHero from './components/HomeHero'
 import HomeSpecials from './components/HomeSpecials'
 import HomeTestimonials from './components/HomeTestimonials'
@@ -10,6 +11,7 @@ const Home = () => {
       <HomeHero />
       <HomeSpecials />
       <HomeTestimonials />
+      <HomeAbout />
     </main>
   )
 }

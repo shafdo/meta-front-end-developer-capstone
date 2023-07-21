@@ -1,6 +1,6 @@
 const HomeTestimonials = () => {
   return (
-    <div className="block md:px-40 bg-[#495E57] py-12">
+    <div className="block px-8 md:px-40 bg-[#495E57] py-20">
       <p className="text-5xl markazi-text text-white mb-12">Testimonials!</p>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-9 xl:gap-8">
         <div className="card bg-[#fff] rounded-xl mb-4">
