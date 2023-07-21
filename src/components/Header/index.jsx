@@ -35,31 +35,25 @@ const Header = () => {
   return (
     <>
       <nav className="">
-        <div className="hidden lg:block mx-auto lg:w-full xl:w-3/4">
-          <div className="lg-nav grid grid-cols-3 my-4">
-            <div className="col-span-1">
-              <img
-                className="w-72 lg:pl-4"
-                src="/assets/Logos/logo.png"
-                alt=""
-              />
-            </div>
-            <div className="col-span-2 flex items-center justify-end">
-              <ul className="flex list-none h-full">
-                {links.map((link, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center transition ease-in-out duration-500 rounded-lg hover:bg-[#F4CE14] px-4 mx-3 h-full"
-                  >
-                    <a href={link.url}>{link.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="lg-nav hidden lg:grid grid-cols-3 px-56 my-4">
+          <div className="col-span-1">
+            <img className="w-72 lg:pl-4" src="/assets/Logos/logo.png" alt="" />
+          </div>
+          <div className="col-span-2 w-full flex items-center justify-end">
+            <ul className="flex list-none h-full">
+              {links.map((link, index) => (
+                <li
+                  key={index}
+                  className="flex items-center transition ease-in-out duration-500 rounded-lg hover:bg-[#F4CE14] px-4 mx-3 h-full"
+                >
+                  <a href={link.url}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <div className="sidebar-toggler flex justify-between items-center lg:hidden top-0 right-0 mx-8 mt-4">
+        <div className="sidebar-toggler flex justify-between items-center lg:hidden top-0 right-0 mx-8 my-4">
           <div>
             <img className="w-60" src="/assets/Logos/logo.png" alt="" />
           </div>
