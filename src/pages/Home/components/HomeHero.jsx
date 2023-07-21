@@ -2,7 +2,7 @@ import Button from '../../../components/Button'
 
 const HomeHero = () => {
   return (
-    <div className="bg-[#495E57] grid grid-cols-2 gap-12 py-12  px-56">
+    <div className="bg-[#495E57] grid grid-cols-1 xl:grid-cols-2 gap-12 py-12 mb-24 px-8 md:px-40">
       <div className="flex items-center text-white">
         <div className="block">
           <p className="text-6xl text-[#F4CE14] markazi-text">Little Lemon</p>
@@ -18,7 +18,7 @@ const HomeHero = () => {
       </div>
       <div className="flex justify-center items-end">
         <img
-          className="rounded-2xl -mb-24 border-8 border-[#fff] hover:-rotate-12 transition-all duration-500 ease-in-out"
+          className="rounded-2xl -mb-24 border-8 border-[#fff] hover:-rotate-12 transition-all duration-500 ease-in-out lg:w-9/12"
           src="/assets/Food/4.png"
           alt=""
         />

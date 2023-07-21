@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <>
       <nav className="">
-        <div className="lg-nav hidden lg:grid grid-cols-3 px-56 my-4">
+        <div className="lg-nav hidden xl:grid grid-cols-3 px-40 my-4">
           <div className="col-span-1">
             <img className="w-72 lg:pl-4" src="/assets/Logos/logo.png" alt="" />
           </div>
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="sidebar-toggler flex justify-between items-center lg:hidden top-0 right-0 mx-8 my-4">
+        <div className="sidebar-toggler flex justify-between items-center xl:hidden top-0 right-0 mx-8 my-4">
           <div>
             <img className="w-60" src="/assets/Logos/logo.png" alt="" />
           </div>
@@ -77,7 +77,7 @@ const Header = () => {
         </div>
 
         <div
-          className={`sidebar lg:hidden fixed top-0 left-0 flex-col w-80 h-screen bg-[#fff] text-black border-r-2 border-[#333] ${
+          className={`sidebar xl:hidden fixed top-0 left-0 flex-col w-80 h-screen bg-[#fff] text-black border-r-2 border-[#333] ${
             sidemMenuOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-500`}
         >
