@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [sidemMenuOpen, setSidemMenuOpen] = useState(false)
@@ -51,7 +52,7 @@ const Header = () => {
                     key={index}
                     className="flex items-center transition ease-in-out duration-500 rounded-lg hover:bg-[#F4CE14] px-4 mx-3 h-full"
                   >
-                    <a href={link.url}>{link.name}</a>
+                    <Link to={link.url}>{link.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -92,7 +93,7 @@ const Header = () => {
                   key={index}
                   className="p-4 transition ease-in-out duration-300 hover:bg-[#F4CE14] cursor-pointer"
                 >
-                  <a href={link.url}>{link.name}</a>
+                  <Link to={link.url}>{link.name}</Link>
                 </li>
               ))}
             </ul>
