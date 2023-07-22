@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../../../components/Button'
 
 const HomeHero = () => {
@@ -11,9 +12,11 @@ const HomeHero = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Button classname="my-8 p-4 bg-[#F4CE14] text-black rounded-lg hover:scale-105 hover:-rotate-3 transition-all duration-300 ease-in-out">
-            Reserve a table
-          </Button>
+          <Link to="/reserve">
+            <Button classname="my-8 p-4 bg-[#F4CE14] text-black rounded-lg hover:scale-105 hover:-rotate-3 transition-all duration-300 ease-in-out">
+              Reserve a table
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center items-end">
