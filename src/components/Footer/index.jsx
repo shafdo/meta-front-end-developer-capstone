@@ -39,15 +39,15 @@ const Footer = () => {
         <div className="mb-12 xl:mb-0">
           <p className="text-2xl mb-4">CONTACT</p>
           <p className="mb-2 flex items-center">
-            <FontAwesomeIcon icon={faMap} size="1x" /> &nbsp; 678 Pisa Ave,
-            Chicago, IL 60611
+            <FontAwesomeIcon icon={faMap} size="1x" /> &nbsp; 4968 University
+            Drive, Chicago, IL 60610
           </p>
           <p className="mb-2 flex items-center">
             <FontAwesomeIcon icon={faPhone} size="1x" /> &nbsp; (312) 593-2744
           </p>
           <p className="mb-2 flex items-center">
             <FontAwesomeIcon icon={faEnvelope} size="1x" /> &nbsp;
-            customer@littlelemon.com
+            info@littlelemon.com
           </p>
         </div>
         <div className="mb-12 xl:mb-0">
