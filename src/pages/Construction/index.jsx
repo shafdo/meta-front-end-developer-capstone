@@ -1,0 +1,26 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+
+const Construction = () => {
+  return (
+    <main>
+      <Header />
+      <div className=" flex items-center justify-center h-[75vh]">
+        <div className="block">
+          <FontAwesomeIcon
+            icon={faScrewdriverWrench}
+            size="5x"
+            className="block mx-auto"
+          />{' '}
+          &nbsp;
+          <p className="text-5xl">Under Construction</p>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  )
+}
+
+export default Construction
