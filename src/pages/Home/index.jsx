@@ -7,14 +7,16 @@ import HomeTestimonials from './components/HomeTestimonials'
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Header />
-      <HomeHero />
-      <HomeSpecials />
-      <HomeTestimonials />
-      <HomeAbout />
+      <main>
+        <HomeHero />
+        <HomeSpecials />
+        <HomeTestimonials />
+        <HomeAbout />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 
