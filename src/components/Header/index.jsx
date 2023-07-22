@@ -20,7 +20,7 @@ const Header = () => {
     },
     {
       name: 'Reservation',
-      url: '#',
+      url: '/reserve',
     },
     {
       name: 'Order Online',
@@ -34,9 +34,9 @@ const Header = () => {
 
   return (
     <>
-      <nav className="">
-        <div className="hidden lg:block mx-auto lg:w-full xl:w-3/4">
-          <div className="lg-nav grid grid-cols-3 my-4">
+      <header>
+        <nav className="">
+          <div className="lg-nav hidden xl:grid grid-cols-3 px-40 my-4">
             <div className="col-span-1">
               <img
                 className="w-72 lg:pl-4"
@@ -44,7 +44,7 @@ const Header = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-2 flex items-center justify-end">
+            <div className="col-span-2 w-full flex items-center justify-end">
               <ul className="flex list-none h-full">
                 {links.map((link, index) => (
                   <li
@@ -57,48 +57,48 @@ const Header = () => {
               </ul>
             </div>
           </div>
-        </div>
 
-        <div className="sidebar-toggler flex justify-between items-center lg:hidden top-0 right-0 mx-8 mt-4">
-          <div>
-            <img className="w-60" src="/assets/Logos/logo.png" alt="" />
+          <div className="sidebar-toggler flex justify-between items-center xl:hidden top-0 right-0 mx-8 my-4">
+            <div>
+              <img className="w-60" src="/assets/Logos/logo.png" alt="" />
+            </div>
+            <div>
+              {sidemMenuOpen ? (
+                <FontAwesomeIcon
+                  className="cursor-pointer"
+                  icon={faClose}
+                  size="3x"
+                  onClick={() => setSidemMenuOpen(!sidemMenuOpen)}
+                />
+              ) : (
+                <FontAwesomeIcon
+                  className="cursor-pointer"
+                  icon={faBars}
+                  size="3x"
+                  onClick={() => setSidemMenuOpen(!sidemMenuOpen)}
+                />
+              )}
+            </div>
           </div>
-          <div>
-            {sidemMenuOpen ? (
-              <FontAwesomeIcon
-                className="cursor-pointer"
-                icon={faClose}
-                size="3x"
-                onClick={() => setSidemMenuOpen(!sidemMenuOpen)}
-              />
-            ) : (
-              <FontAwesomeIcon
-                className="cursor-pointer"
-                icon={faBars}
-                size="3x"
-                onClick={() => setSidemMenuOpen(!sidemMenuOpen)}
-              />
-            )}
-          </div>
-        </div>
 
-        <div
-          className={`sidebar lg:hidden fixed top-0 left-0 flex-col w-80 h-screen bg-[#fff] text-black border-r-2 border-[#333] ${
-            sidemMenuOpen ? 'translate-x-0' : '-translate-x-full'
-          } transition-transform duration-500`}
-        >
-          <ul className="flex-grow">
-            {links.map((link, index) => (
-              <li
-                key={index}
-                className="p-4 transition ease-in-out duration-300 hover:bg-[#F4CE14] cursor-pointer"
-              >
-                <a href={link.url}>{link.name}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
+          <div
+            className={`sidebar xl:hidden fixed top-0 left-0 flex-col w-80 h-screen bg-[#fff] text-black border-r-2 border-[#333] ${
+              sidemMenuOpen ? 'translate-x-0' : '-translate-x-full'
+            } transition-transform duration-500`}
+          >
+            <ul className="flex-grow">
+              {links.map((link, index) => (
+                <li
+                  key={index}
+                  className="p-4 transition ease-in-out duration-300 hover:bg-[#F4CE14] cursor-pointer"
+                >
+                  <a href={link.url}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </header>
     </>
   )
 }
